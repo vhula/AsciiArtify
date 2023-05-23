@@ -54,15 +54,15 @@
 
 ## minikube
 
-
+![Image](minikube-demo.gif)
 
 ## kind
 
-
+![Image](kind-demo.gif)
 
 ## k3d
 
-
+![Image](k3d-demo.gif)
 
 # Висновки
 
