@@ -37,3 +37,4 @@ kubectl port-forward svc/argocd-server -n argocd 8085:443
 
 Тепер Dashboard ArgoCD доступний на вашій локальній машині за адресою: ```https://localhost:8085```
 
+![Image](argocd-dashboard-demo.gif)
