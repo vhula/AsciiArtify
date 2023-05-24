@@ -10,7 +10,7 @@
 k3d cluster create testcluster
 ```
 
-![Image](k3d-poc-demo.gif)
+![Image](../res/k3d-poc-demo.gif)
 
 ## Встановлення ArgoCD
 
@@ -19,7 +19,7 @@ kubectl create namespace argocd
 kubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/install.yaml
 ```
 
-![Image](argocd-install-demo.gif)
+![Image](../res/argocd-install-demo.gif)
 
 ## Отримання паролю до ArgoCD Dashboard
 
@@ -27,7 +27,7 @@ kubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/st
 kubectl -n argocd get secret argocd-initial-admin-secret -o jsonpath="{.data.password}" | base64 -d; echo
 ```
 
-![Image](get-password-demo.gif)
+![Image](../res/get-password-demo.gif)
 
 ## Налаштування port-forwarding до ArgoCD Dashboard
 
@@ -37,4 +37,4 @@ kubectl port-forward svc/argocd-server -n argocd 8085:443
 
 Тепер Dashboard ArgoCD доступний на вашій локальній машині за адресою: ```https://localhost:8085```
 
-![Image](argocd-dashboard-demo.gif)
+![Image](../res/argocd-dashboard-demo.gif)
