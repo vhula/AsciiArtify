@@ -12,3 +12,11 @@ k3d cluster create testcluster
 
 ![Image](k3d-poc-demo.gif)
 
+## Встановлення ArgoCD
+
+```bash
+kubectl create namespace argocd
+kubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/install.yaml
+```
+
+![Image](argocd-install-demo.gif)
